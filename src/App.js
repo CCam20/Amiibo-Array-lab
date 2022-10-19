@@ -2,7 +2,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../src/Components/Home";
-import BasketList from "./Components/UI/BasketList";
+
 import NavBar from '../src/Components/UI/NavBar';
 
 import Basket from './Components/Basket';

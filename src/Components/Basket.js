@@ -5,7 +5,7 @@ const Basket = () => {
   return (
     <>
     <h1>Basket</h1>
-    <div><BasketList/></div>
+    <div>{BasketList}</div>
     <div></div>
     </>
   )
