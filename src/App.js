@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "../src/Components/Home";
+import BasketList from "./Components/UI/BasketList";
+import NavBar from '../src/Components/UI/NavBar';
+
+import Basket from './Components/Basket';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/basket' element={<Basket/>} />
+        </Routes>
+    {/* <AmiiboContainer/> */}
+    </Router>
+
+
   );
 }
 
